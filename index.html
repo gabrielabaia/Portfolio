@@ -393,8 +393,6 @@ button{font-family:inherit;cursor:pointer}
 .r-role li{font-size:13.8px;color:var(--gray-700);margin-bottom:4px;line-height:1.5}
 .r-tags{display:flex;flex-wrap:wrap;gap:8px}
 .r-tag{font-size:12.5px;padding:6px 13px;border-radius:var(--r-pill);background:var(--gray-100);color:var(--gray-700)}
-.r-tag.featured{background:var(--coral);color:var(--coral-deep);font-weight:700;border:1px solid rgba(var(--coral-deep-rgb),.25)}
-.r-note{font-size:11px;color:var(--gray-500);margin:-6px 0 10px}
 .r-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
 @media (max-width:640px){.r-cols{grid-template-columns:1fr}#resume-doc{padding:26px}}
 
@@ -877,33 +875,40 @@ button{font-family:inherit;cursor:pointer}
     <div class="resume-top">
       <div>
         <h1>Resume</h1>
-        <p>CRO & Growth Analyst — Hypothesis-Driven A/B Testing · GA4 Analytics · Wireframing & Rapid Prototyping</p>
+        <p>CRO & Experimentation Analyst | B2B SaaS | Design-led A/B Testing</p>
+        <p style="margin-top:2px">São Paulo, Brazil · Remote, UTC-3 (overlap with EU & US hours)</p>
       </div>
       <button class="btn btn-primary" onclick="downloadResume()">↓ Download PDF</button>
     </div>
 
     <div id="resume-doc">
-      <p class="r-summary">CRO Analyst with hands-on experience designing and running A/B tests end-to-end — from spotting a signal in the data, to forming a testable hypothesis, to launching and documenting the experiment. Comfortable working with GA4 and cross-functional teams of design, engineering and analytics. Background in Graphic Design means I can sketch and prototype test concepts myself before handing them off for implementation. Curious by nature, fluent in English, and always looking for the "why" behind user behavior.</p>
+      <p class="r-summary">CRO Analyst at Brazil's largest HR Tech, running an ongoing experimentation program on a ~1.1M sessions/month B2B SaaS website. Set an all-time record form conversion rate (+40.6%) and led cross-functional Black Friday execution across 10 key pages. My Graphic Design background lets me go from data signal to hypothesis to prototyped variation myself. Fluent in English and Spanish.</p>
 
       <div class="r-block">
         <h3>Experience</h3>
         <div class="r-role">
-          <div class="r-top"><h4>CRO Analyst (Conversion Rate Optimization)</h4><span class="r-period">Sep 2024 — Present</span></div>
-          <div class="r-org">Sólides</div>
+          <div class="r-top"><h4>CRO Analyst</h4><span class="r-period">Sep 2024 – Present</span></div>
+          <div class="r-org">Sólides (Brazil's largest HR Tech, B2B SaaS)</div>
           <ul>
-            <li>Analyzed conversion data and user behavior in GA4 to identify bottlenecks and turn signals into testable hypotheses</li>
-            <li>Designed, executed and analyzed A/B tests end-to-end, from hypothesis to launch, alongside designers and engineers</li>
-            <li>Sketched and prototyped test concepts using a Graphic Design background before handoff to implementation</li>
-            <li>Documented and presented experiment results, keeping a clear pipeline of ideas prioritized by impact and effort</li>
+            <li>Run an ongoing A/B and multivariate testing program on Convert across blog, landing pages and forms for a website with ~1.1M sessions/month ([TODO: total number of experiments, e.g. "40+"] experiments, [TODO: win rate]% win rate)</li>
+            <li>Owned the website end-to-end (Sep–Dec 2025), setting an all-time record form conversion rate (+40.6%) and sustaining performance through Black Friday peak (14.9k+ leads/month)</li>
+            <li>Led Black Friday website execution across 10 key pages with Content, Design and Media teams, including pre-peak "warm-up" A/B tests</li>
+            <li>Redesigned the WhatsApp CTA widget, the main source of qualified sales meetings, lifting channel CVR by 109% in December and reversing the seasonal decline</li>
+            <li>Shipped winning tests including form microcopy (+56.6%, 95% conf.) and blog tagging strategy (+15.6%, 99% conf.)</li>
+            <li>Turn GA4 and HubSpot data into prioritized hypotheses and prototype variations in Figma before handoff</li>
+            <li>Onboarded and mentored a teammate into CRO</li>
+          </ul>
+        </div>
+        <div class="r-role">
+          <div class="r-top"><h4>Freelance CRO Consultant</h4><span class="r-period">[TODO: dates]</span></div>
+          <div class="r-org">Upwork</div>
+          <ul>
+            <li>[TODO: confirmar se há projetos entregues, tipos de cliente e resultados. Se não houver, remover esta seção]</li>
           </ul>
         </div>
         <div class="r-role">
           <div class="r-top"><h4>Visual Communication Intern (Scholarship Holder)</h4><span class="r-period">Jun 2024 — Dec 2024</span></div>
           <div class="r-org">State University of Minas Gerais (UEMG)</div>
-          <ul>
-            <li>Produced and curated visual content for digital platforms and institutional channels</li>
-            <li>Collaborated with communication teams to ensure visual consistency and brand alignment</li>
-          </ul>
         </div>
         <div class="r-role">
           <div class="r-top"><h4>B2B Marketing Intern</h4><span class="r-period">Apr 2022 — Mar 2024</span></div>
@@ -924,19 +929,15 @@ button{font-family:inherit;cursor:pointer}
             <div class="r-org">Bachelor's Degree in Graphic Design</div>
           </div>
           <h3 style="margin-top:22px">Languages</h3>
-          <p style="font-size:13.8px;color:var(--gray-700)">Portuguese (native) · English (fluent) · Spanish (fluent)</p>
+          <p style="font-size:13.8px;color:var(--gray-700)">Portuguese (native) · English (fluent, [TODO: IELTS score quando tiver]) · Spanish (fluent)</p>
         </div>
         <div class="r-block">
           <h3>Core Skills</h3>
-          <p class="r-note">⚡ = skills that set her apart in the current market</p>
           <div class="r-tags">
-            <span class="r-tag featured">⚡ AEO (Answer Engine Optimization)</span>
-            <span class="r-tag featured">⚡ User &amp; Behavioral Psychology</span>
-            <span class="r-tag featured">⚡ Accessibility &amp; Inclusive Design</span>
-            <span class="r-tag">A/B Testing</span><span class="r-tag">Conversion Rate Optimization</span><span class="r-tag">Hypothesis Development</span>
-            <span class="r-tag">GA4</span><span class="r-tag">HubSpot Marketing Hub</span><span class="r-tag">Wireframing / Figma</span>
-            <span class="r-tag">Rapid Prototyping</span><span class="r-tag">Product Analytics</span><span class="r-tag">Funnel Analysis</span>
-            <span class="r-tag">UX Research</span><span class="r-tag">Cross-functional Collaboration</span>
+            <span class="r-tag">A/B Testing</span><span class="r-tag">Experimentation</span><span class="r-tag">Conversion Rate Optimization</span>
+            <span class="r-tag">Hypothesis Development</span><span class="r-tag">Funnel Analysis</span><span class="r-tag">Product Analytics</span>
+            <span class="r-tag">Convert</span><span class="r-tag">GA4</span><span class="r-tag">HubSpot (reporting)</span><span class="r-tag">Figma</span>
+            <span class="r-tag">UX Research</span><span class="r-tag">User Psychology</span><span class="r-tag">Accessibility &amp; Inclusive Design</span><span class="r-tag">AEO</span>
           </div>
           <h3 style="margin-top:22px">Certifications</h3>
           <p style="font-size:13.8px;color:var(--gray-700);line-height:1.7">Conversion Optimization Certification Exam (Google) · AEO Fundamentals (HubSpot) · User Psychology (Uxcel) · Google Analytics Certification – GA4 (Google) · Universal Design: Accessibility &amp; Inclusion (UEMG) · HubSpot Marketing Software · UX Research Bootcamp · Content Marketing</p>
@@ -1459,26 +1460,30 @@ function downloadResume(){
     doc.setFont('helvetica','bold'); doc.setFontSize(22); doc.setTextColor(26,26,26);
     doc.text('Gabriela Baia', margin, y); y += 8;
     doc.setFont('helvetica','normal'); doc.setFontSize(11); doc.setTextColor(90,85,80);
-    doc.text('CRO & Growth Analyst | Hypothesis-Driven A/B Testing - GA4 - Wireframing', margin, y); y += 6;
+    doc.text('CRO & Experimentation Analyst | B2B SaaS | Design-led A/B Testing', margin, y); y += 6;
     doc.setFontSize(9.5); doc.setTextColor(120,115,108);
-    doc.text('gteixeirab3@gmail.com  |  linkedin.com/in/gabriela-baia  |  Brazil (Remote, EMEA)', margin, y); y += 10;
+    doc.text('gteixeirab3@gmail.com  |  linkedin.com/in/gabriela-baia  |  Sao Paulo, Brazil (Remote, UTC-3)', margin, y); y += 10;
 
     heading('Summary'); y += 2;
     doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor(60,58,55);
-    var summary = 'CRO Analyst with hands-on experience designing and running A/B tests end-to-end - from spotting a signal in the data, to forming a testable hypothesis, to launching and documenting the experiment. Comfortable with GA4 and cross-functional teams of design, engineering and analytics. Background in Graphic Design means sketching and prototyping test concepts before handoff to implementation.';
+    var summary = "CRO Analyst at Brazil's largest HR Tech, running an ongoing experimentation program on a ~1.1M sessions/month B2B SaaS website. Set an all-time record form conversion rate (+40.6%) and led cross-functional Black Friday execution across 10 key pages. Graphic Design background means going from data signal to hypothesis to prototyped variation. Fluent in English and Spanish.";
     doc.splitTextToSize(summary, maxW).forEach(function(line){ doc.text(line, margin, y); y += lh; });
     y += 4;
 
     heading('Experience'); y += 2;
-    role('CRO Analyst (Conversion Rate Optimization)', 'Solides', 'Sep 2024 - Present', [
-      'Analyzed conversion data and user behavior in GA4, turning signals into testable hypotheses',
-      'Designed, executed and analyzed A/B tests end-to-end alongside designers and engineers',
-      'Sketched and prototyped test concepts using a Graphic Design background before handoff',
-      'Documented and presented experiment results, prioritizing a pipeline by impact and effort'
+    role('CRO Analyst', "Solides (Brazil's largest HR Tech, B2B SaaS)", 'Sep 2024 - Present', [
+      'Run an ongoing A/B and multivariate testing program on Convert across blog, landing pages and forms for a website with ~1.1M sessions/month ([TODO: total number of experiments, e.g. "40+"] experiments, [TODO: win rate]% win rate)',
+      'Owned the website end-to-end (Sep-Dec 2025), setting an all-time record form conversion rate (+40.6%) and sustaining performance through Black Friday peak (14.9k+ leads/month)',
+      'Led Black Friday website execution across 10 key pages with Content, Design and Media teams, including pre-peak "warm-up" A/B tests',
+      'Redesigned the WhatsApp CTA widget, the main source of qualified sales meetings, lifting channel CVR by 109% in December and reversing the seasonal decline',
+      'Shipped winning tests including form microcopy (+56.6%, 95% conf.) and blog tagging strategy (+15.6%, 99% conf.)',
+      'Turn GA4 and HubSpot data into prioritized hypotheses and prototype variations in Figma before handoff',
+      'Onboarded and mentored a teammate into CRO'
     ]);
-    role('Visual Communication Intern', 'State University of Minas Gerais (UEMG)', 'Jun 2024 - Dec 2024', [
-      'Produced and curated visual content for institutional digital channels'
+    role('Freelance CRO Consultant', 'Upwork', '[TODO: dates]', [
+      '[TODO: confirmar se ha projetos entregues, tipos de cliente e resultados. Se nao houver, remover esta secao]'
     ]);
+    role('Visual Communication Intern', 'State University of Minas Gerais (UEMG)', 'Jun 2024 - Dec 2024', []);
     role('B2B Marketing Intern', 'AugeApp', 'Apr 2022 - Mar 2024', [
       'Developed content strategy focused on engagement and lead generation',
       'Created SEO-driven content and optimized the company website'
@@ -1492,10 +1497,11 @@ function downloadResume(){
 
     heading('Skills & Certifications'); y += 2;
     doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor(60,58,55);
-    doc.splitTextToSize('Differentiating skills: AEO (Answer Engine Optimization), User & Behavioral Psychology, Accessibility & Inclusive Design.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
-    doc.splitTextToSize('Also: A/B Testing, Conversion Rate Optimization, Hypothesis Development, GA4, HubSpot Marketing Hub, Wireframing / Figma, Rapid Prototyping, Product Analytics, Funnel Analysis, UX Research, Cross-functional Collaboration.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
+    doc.splitTextToSize('Core Skills: A/B Testing, Experimentation, Conversion Rate Optimization, Hypothesis Development, Funnel Analysis, Product Analytics.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
+    doc.splitTextToSize('Tools: Convert, GA4, HubSpot (reporting), Figma.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
+    doc.splitTextToSize('Additional: UX Research, User Psychology, Accessibility & Inclusive Design, AEO.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
     doc.splitTextToSize('Certifications: Conversion Optimization Certification Exam (Google), AEO Fundamentals (HubSpot), User Psychology (Uxcel), Google Analytics Certification - GA4 (Google), Universal Design: Accessibility & Inclusion (UEMG), HubSpot Marketing Software, UX Research Bootcamp, Content Marketing.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
-    doc.splitTextToSize('Languages: Portuguese (native), English (fluent), Spanish (fluent).', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
+    doc.splitTextToSize('Languages: Portuguese (native), English (fluent, [TODO: IELTS score quando tiver]), Spanish (fluent).', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
 
     doc.save('Gabriela-Baia-Resume.pdf');
   }catch(err){
