@@ -393,6 +393,8 @@ button{font-family:inherit;cursor:pointer}
 .r-role li{font-size:13.8px;color:var(--gray-700);margin-bottom:4px;line-height:1.5}
 .r-tags{display:flex;flex-wrap:wrap;gap:8px}
 .r-tag{font-size:12.5px;padding:6px 13px;border-radius:var(--r-pill);background:var(--gray-100);color:var(--gray-700)}
+.r-tag.featured{background:var(--coral);color:var(--coral-deep);font-weight:700;border:1px solid rgba(var(--coral-deep-rgb),.25)}
+.r-note{font-size:11px;color:var(--gray-500);margin:-6px 0 10px}
 .r-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
 @media (max-width:640px){.r-cols{grid-template-columns:1fr}#resume-doc{padding:26px}}
 
@@ -926,13 +928,18 @@ button{font-family:inherit;cursor:pointer}
         </div>
         <div class="r-block">
           <h3>Core Skills</h3>
+          <p class="r-note">⚡ = skills that set her apart in the current market</p>
           <div class="r-tags">
-            <span class="r-tag">A/B Testing</span><span class="r-tag">Hypothesis Development</span><span class="r-tag">GA4</span>
-            <span class="r-tag">Wireframing / Figma</span><span class="r-tag">Rapid Prototyping</span><span class="r-tag">Product Analytics</span>
-            <span class="r-tag">Funnel Analysis</span><span class="r-tag">UX Research</span><span class="r-tag">Cross-functional Collaboration</span>
+            <span class="r-tag featured">⚡ AEO (Answer Engine Optimization)</span>
+            <span class="r-tag featured">⚡ User &amp; Behavioral Psychology</span>
+            <span class="r-tag featured">⚡ Accessibility &amp; Inclusive Design</span>
+            <span class="r-tag">A/B Testing</span><span class="r-tag">Conversion Rate Optimization</span><span class="r-tag">Hypothesis Development</span>
+            <span class="r-tag">GA4</span><span class="r-tag">HubSpot Marketing Hub</span><span class="r-tag">Wireframing / Figma</span>
+            <span class="r-tag">Rapid Prototyping</span><span class="r-tag">Product Analytics</span><span class="r-tag">Funnel Analysis</span>
+            <span class="r-tag">UX Research</span><span class="r-tag">Cross-functional Collaboration</span>
           </div>
           <h3 style="margin-top:22px">Certifications</h3>
-          <p style="font-size:13.8px;color:var(--gray-700);line-height:1.7">Conversion Optimization Certification · UX Research Bootcamp · Intro to Artificial Intelligence · Digital Marketing · Content Marketing</p>
+          <p style="font-size:13.8px;color:var(--gray-700);line-height:1.7">Conversion Optimization Certification Exam (Google) · AEO Fundamentals (HubSpot) · User Psychology (Uxcel) · Google Analytics Certification – GA4 (Google) · Universal Design: Accessibility &amp; Inclusion (UEMG) · HubSpot Marketing Software · UX Research Bootcamp · Content Marketing</p>
         </div>
       </div>
     </div>
@@ -1485,8 +1492,9 @@ function downloadResume(){
 
     heading('Skills & Certifications'); y += 2;
     doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor(60,58,55);
-    doc.splitTextToSize('A/B Testing, Hypothesis Development, GA4, Wireframing / Figma, Rapid Prototyping, Product Analytics, Funnel Analysis, UX Research, Cross-functional Collaboration.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
-    doc.splitTextToSize('Certifications: Conversion Optimization Certification, UX Research Bootcamp, Digital Marketing, Content Marketing, Intro to AI.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
+    doc.splitTextToSize('Differentiating skills: AEO (Answer Engine Optimization), User & Behavioral Psychology, Accessibility & Inclusive Design.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
+    doc.splitTextToSize('Also: A/B Testing, Conversion Rate Optimization, Hypothesis Development, GA4, HubSpot Marketing Hub, Wireframing / Figma, Rapid Prototyping, Product Analytics, Funnel Analysis, UX Research, Cross-functional Collaboration.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
+    doc.splitTextToSize('Certifications: Conversion Optimization Certification Exam (Google), AEO Fundamentals (HubSpot), User Psychology (Uxcel), Google Analytics Certification - GA4 (Google), Universal Design: Accessibility & Inclusion (UEMG), HubSpot Marketing Software, UX Research Bootcamp, Content Marketing.', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
     doc.splitTextToSize('Languages: Portuguese (native), English (fluent), Spanish (fluent).', maxW).forEach(function(line){ doc.text(line, margin, y); y+=lh; });
 
     doc.save('Gabriela-Baia-Resume.pdf');
@@ -1530,8 +1538,9 @@ function downloadResume(){
     { test: /about|who (are|is)|hobby|hobbies|interest|climb|dance|travel|design background|jack of all trades/, reply: "Gabi is a designer turned CRO & Growth professional — background in Graphic Design, now working where design, data and psychology meet. Outside work: climbing, dance, travel and learning languages. See the 'About me' section for more." },
     { test: /years? of experience|seniority|\bsenior\b|\bjunior\b|how long.*(experience|working)|experience level/, reply: "Gabi has been in a dedicated CRO Analyst role at Sólides since Sep 2024, running the full A/B testing loop end-to-end. Before that, she built a marketing and design foundation through internships in B2B marketing (AugeApp, 2022–2024) and visual communication (UEMG, 2024), alongside her Graphic Design degree." },
     { test: /experience|role|job|solides|s[oó]lides|work history|background|career/, reply: "Gabi is a CRO Analyst at Sólides (Sep 2024–present), running A/B tests end-to-end across funnel analysis, GA4 analytics and UX optimization. Before that, she worked in B2B marketing (AugeApp) and visual communication (UEMG), and holds a degree in Graphic Design." },
-    { test: /skill|tool|ga4|figma|stack/, reply: "Core skills: A/B Testing, Conversion Rate Optimization, Funnel Testing, Data Analysis, GA4, Copywriting, UX & UI Design, Website Optimization and Cross-functional Collaboration. She also runs experiments in Convert." },
-    { test: /certif/, reply: "Certifications on her resume: Conversion Optimization Certification, UX Research Bootcamp, Digital Marketing, Content Marketing, and Intro to Artificial Intelligence." },
+    { test: /differentiat|stand out|unique\b|competitive edge|set.*apart|\baeo\b|answer engine|behavioral psych/, reply: "Three skills set her apart from most CRO/Growth profiles: AEO (Answer Engine Optimization, certified by HubSpot), User & Behavioral Psychology (certified by Uxcel), and Accessibility & Inclusive Design. They're flagged with a ⚡ in the 'Core Skills' list on her Resume tab." },
+    { test: /skill|tool|ga4|figma|stack/, reply: "Core skills: A/B Testing, Conversion Rate Optimization, Hypothesis Development, GA4, HubSpot Marketing Hub, Wireframing / Figma, Rapid Prototyping, Product Analytics, Funnel Analysis, UX Research and Cross-functional Collaboration — plus AEO, User & Behavioral Psychology and Accessibility & Inclusive Design, which set her apart. She also runs experiments in Convert." },
+    { test: /certif/, reply: "Certifications on her resume: Conversion Optimization Certification Exam (Google), AEO Fundamentals (HubSpot), User Psychology (Uxcel), Google Analytics Certification – GA4 (Google), Universal Design: Accessibility & Inclusion (UEMG), HubSpot Marketing Software, UX Research Bootcamp, and Content Marketing." },
     { test: /language|portuguese|spanish|english|fluent/, reply: "Gabi is a native Portuguese speaker, fluent in English, and fluent in Spanish." },
     { test: /education|degree|university|uemg|graduat/, reply: "Gabriela holds a Bachelor's Degree in Graphic Design from Universidade do Estado de Minas Gerais (UEMG), 2020–2024." },
     { test: /location|based|brazil|time ?zone|remote/, reply: "Gabi is based in Brazil (Brazil time zone, shown live in the header) and open to remote work." },
